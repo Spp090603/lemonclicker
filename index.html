@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon Clicker - Instalador de la Aplicación</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .container.show {
+            opacity: 1;
+        }
+
+        .lemon-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('imagenes/fondo3.jpg') repeat;
+            animation: lemonAnimation 30s linear infinite;
+        }
+
+        @keyframes lemonAnimation {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 1000px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="lemon-background"></div>
+    <div class="container" id="container">
+        <h1> Lemon Clicker</h1>
+        
+        <div class="app-installation">
+            <h3>Disfruta de nuestra nueva apliación Lemon Clicker haz clic en el limón:</h3>
+            <a href="https://dl.dropboxusercontent.com/scl/fi/wnp7ce06ihlkgw5j6w49x/Lemon_flutter-1.2.zip?rlkey=f537v7vf0gvjrbs08pgsalypp" onclick="instalarApp()">
+                <img src="imagenes/lemon-2850849_1280.webp" alt="Botón de Instalación">
+            </a>
+            <h3>o escanea el siguiente código QR:</h3>
+            <img src="imagenes/qrcode-generado.png" alt="Código QR para instalar Lemon Clicker">
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            document.getElementById("container").classList.add("show");
+        };
+
+        function instalarApp() {
+            // Lógica para instalar la aplicación
+            alert('La aplicación está siendo instalada...');   
+        }
+    </script>
+</body>
+</html>
+
