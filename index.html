@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +37,7 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: url('fondo3.jpg') repeat;
+            background: url('imagenes/fondokawaii2.png') repeat;
             animation: lemonAnimation 30s linear infinite;
         }
 
@@ -44,37 +45,40 @@
             0% {
                 background-position: 0 0;
             }
+
             100% {
                 background-position: 1000px 0;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="lemon-background"></div>
     <div class="container" id="container">
         <h1> Lemon Clicker</h1>
-        
+
         <div class="app-installation">
             <h3>Disfruta de nuestra nueva apliación Lemon Clicker haz clic en el limón:</h3>
-            <a href="https://dl.dropboxusercontent.com/scl/fi/wnp7ce06ihlkgw5j6w49x/Lemon_flutter-1.2.zip?rlkey=f537v7vf0gvjrbs08pgsalypp" onclick="instalarApp()">
-                <img src="lemon-2850849_1280.webp" alt="Botón de Instalación">
+            <a href="https://dl.dropboxusercontent.com/scl/fi/hjbnad3b91yctzqjv4iec/app-release.apk?rlkey=kqxpupoloi1jdercgveppufm5&st=o10ti19x&dl=0
+            " onclick="instalarApp()">
+                <img src="imagenes/lemon-2850849_1280.webp" alt="Botón de Instalación">
             </a>
             <h3>o escanea el siguiente código QR:</h3>
-            <img src="qrcode-generado.png" alt="Código QR para instalar Lemon Clicker">
+            <img src="imagenes/qrcode-generado.png" alt="Código QR para instalar Lemon Clicker">
         </div>
     </div>
 
     <script>
-        window.onload = function() {
+        window.onload = function () {
             document.getElementById("container").classList.add("show");
         };
 
         function instalarApp() {
             // Lógica para instalar la aplicación
-            alert('La aplicación está siendo instalada...');   
+            alert('La aplicación está siendo instalada...');
         }
     </script>
 </body>
-</html>
 
+</html>
