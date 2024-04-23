@@ -49,3 +49,37 @@ h3{
     cursor: pointer;
     /* Cambia el cursor al pasar sobre la imagen */
 }
+
+
+
+
+/* intento pndejo de responsive de adrian*/
+@media screen and (max-width: 768px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 25em;
+        padding: 30px;
+        background-color: #a0cc1edb;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 15em;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+    .app-installation{
+        margin-top: 0px;
+    }
+    h3{
+        font-size: 16px;
+    }
+
+    .app-installation img{
+        width: 100px;
+    }
+
+
+    }
